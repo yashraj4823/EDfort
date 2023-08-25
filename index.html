@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="project3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <img src="logo.png" alt="" />
+        <div class="links" id="navlinks">
+          <i class="fa fa-times" onclick="hidemenu"></i>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">COURSE</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
+          Expedita,asperiores explicabo aliquam esse odio aliquid nam vero eius.
+          Nam, doloribus!
+        </p>
+        <a href="" class="hero-btn">Visit for more info.</a>
+      </div>
+    </section>
+    <section class="course">
+      <h1>Courses We Offer</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      </p>
+      <div class="row">
+        <div class="course-col">
+          <h3>Intermediate</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            temporibus ab inventore tempore! Neque aliquid, amet perspiciatis
+            facere excepturi dolore magnam quos minus numquam placeat et iusto
+            modi deserunt ipsum delectus! Esse, totam? Quo!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Degree</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            temporibus ab inventore tempore! Neque aliquid, amet perspiciatis
+            facere excepturi dolore magnam quos minus numquam placeat et iusto
+            modi deserunt ipsum delectus! Esse, totam? Quo!
+          </p>
+        </div>
+        <div class="course-col">
+          <h3>Post Graduation</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            temporibus ab inventore tempore! Neque aliquid, amet perspiciatis
+            facere excepturi dolore magnam quos minus numquam placeat et iusto
+            modi deserunt ipsum delectus! Esse, totam? Quo!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var navlinks = document.getElementById("navlinks");
+
+      function showmenu() {
+        navlinks.style.right = "0";
+      }
+      function hidemenu() {
+        navlinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
